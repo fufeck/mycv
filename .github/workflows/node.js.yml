@@ -29,6 +29,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run lint
+    
+    - uses: actions/upload-pages-artifact
+        with:
+          name: github-pages
+          path: dist/
 
   deploy:
     # Add a dependency to the build job
