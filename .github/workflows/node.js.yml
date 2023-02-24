@@ -31,9 +31,9 @@ jobs:
     - run: npm run lint
     
     - uses: actions/upload-pages-artifact
-        with:
-          name: github-pages
-          path: dist/
+      with:
+        name: github-pages
+        path: dist/
 
   deploy:
     # Add a dependency to the build job
