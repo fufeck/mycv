@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm run lint
     
-      uses: actions/upload-pages-artifact
+    - uses: actions/upload-pages-artifact@v0
       with:
         name: github-pages
         path: dist/
