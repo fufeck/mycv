@@ -33,7 +33,7 @@ jobs:
     - uses: actions/upload-pages-artifact@v0
       with:
         name: github-pages
-        path: dist/
+        path: dist/index.html
 
   deploy:
     # Add a dependency to the build job
