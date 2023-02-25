@@ -16,7 +16,8 @@
       <div class="text" v-for="(t, index) in p.tab" :key="p.id + '#' + index">
         <h3>{{ t.title }}</h3>
         <h4>{{ t.subtitle }}</h4>
-        <p>{{ t.description }}</p>
+        <p v-if="t.html" v-html="t.description"></p>
+        <p v-else>{{ t.description }}</p>
       </div>
     </div>
   </div>
@@ -35,7 +36,7 @@ export default {
   methods: {
     scrollMeTo(refName) {
       const element = this.$refs[refName][0];
-      const top = element.offsetTop - 80;
+      const top = element.offsetTop - 74;
 
       window.scrollTo({
         top,
@@ -82,11 +83,10 @@ export default {
       button {
         color: $black;
         background: none;
-        border: solid 1px;
-        border-radius: 2em;
+        border: none;
         font: inherit;
-        padding: 0.75em 2em;
-        margin-left: 10px;
+        padding: 10px;
+        cursor: pointer;
       }
     }
   }
