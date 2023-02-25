@@ -1,11 +1,13 @@
 <!-- Use preprocessors via the lang attribute! e.g. <template lang="pug"> -->
 <template>
   <div id="app">
-    <!-- <div class="header">
-      <div class="menu">
-        <button v-for="p in pages" :key="'button#' + p.id" @click="scrollMeTo(p.id)">{{ p.name }}</button>
-      </div>
-    </div> -->
+    <div class="header">
+      <Slide right :isOpen="isOpen" @openMenu="isOpen = true">
+        <a v-for="p in pages" :key="'button#' + p.id" @click="scrollMeTo(p.id)" :id="p.id">
+          <span>{{ p.name }}</span>
+        </a>
+      </Slide>
+    </div>
 
     <div v-for="p in pages" :key="'page#' + p.id" :class="p.class" :ref="p.id">
       <div class="title">
@@ -24,11 +26,16 @@
 
 <script>
 
+import { Slide } from 'vue3-burger-menu'
 import { pages } from './../data/pages.data.ts'
 
 export default {
+  components: {
+    Slide,
+  },
   data() {
     return {
+      isOpen: false,
       pages,
     };
   },
@@ -42,6 +49,7 @@ export default {
         left: 0,
         behavior: 'smooth'
       });
+      this.isOpen = false;
     }
   }
 };
@@ -66,6 +74,19 @@ export default {
     background-color: $black;
   }
   
+  .header {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: white;
+    background-color: $yellow;
+
+
+  }
+
   .page {
     position: relative;
     min-height: 100vh;
