@@ -124,7 +124,7 @@ export const pages = [
       title: "PLUS",
       tab: [
         {
-          title: "Référence",
+          title: "Références",
           html: true,
           description: "<a style='color: #fec788' target='_blank' href='https://www.linkedin.com/in/ftaffore/'>Linkedin</a><br/><a style='color: #fec788' target='_blank' href='https://github.com/fufeck'>Github</a><br/><a style='color: #fec788' target='_blank' href='https://www.malt.fr/profile/fabientafforeau'>Malt</a><br/><a style='color: #fec788' target='_blank' href='./CV.pdf'>CV</a>"
         },
