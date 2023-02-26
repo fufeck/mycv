@@ -5,7 +5,7 @@ export const pages = [
       class: "color-black page center",
       title: "FABIEN TAFFOREAU",
       subtitle: "DÉVELOPPEUR FULLSTACK",
-      description: "Toujours avec un ordinateur dans les mains depuis mon plus jeune âge. J’ai appris grâce à Epitech puis 42 à m’adapter et apprendre très rapidement de nouveau langages. J’aime aussi beaucoup les défis techniques et l’optimisation. Assez créatif, j’adore prendre part à la conception d’un projet et le suivi avec le client afin de parler à d’autres personnes que mon ordinateur.",
+      description: "Toujours avec un ordinateur dans les mains depuis mon plus jeune âge. J’ai appris grâce à Epitech puis 42 à m’adapter et à me former très rapidement sur de nouveaux langages. J’aime aussi beaucoup les défis techniques et l’optimisation. Assez créatif, j’adore prendre part à la conception d’un projet et assure le suivi avec le client afin de parler à d’autres personnes que mon ordinateur.",
       
     },
     {
@@ -46,7 +46,7 @@ export const pages = [
           title: "2019 - FREELANCE DÉVELOPPEUR FULLSTACK - FABNUM",
           subtitle: "NodeJs / NestJs / Angular2 / Vue2 / Postgres / Typescript",
           html: true,
-          description: "SEPIA - Création et développement d’une application web pourvisualiser le trafic aérien en temps réel comme FlightRadar24.<br/>OSIRIS - Création et développement d’une web app pour ordonner les écoles, formations et cursus rattachées à l’armée de l’air",
+          description: "SEPIA - Création et développement d’une application web pour visualiser le trafic aérien en temps réel comme FlightRadar24.<br/>OSIRIS - Création et développement d’une web app pour ordonner les écoles, formations et cursus rattachés à l’armée de l’air",
         },
         {
           title: "2017 - STAGE / CDI DÉVELOPPEUR FULLSTACK - COSIUM",
@@ -66,7 +66,7 @@ export const pages = [
         {
           title: "2015 - PART-TIME DÉVELOPPEUR WEB / MOBILE- AMEXIUM",
           subtitle: "Symphony2 / Ionic / Cordova / AngularJs / MySQL",
-          description: "Développement d’une solution web SASS avec application mobile, qui permettait de référencé tout les biens et mobiliers d'une structure",
+          description: "Développement d’une solution web SASS avec application mobile, qui permettait de référencer tout les biens et mobiliers des collectivités",
         },
         {
           title: "2014 - STAGE DÉVELOPPEUR WEB - SUBVITAMINE",
@@ -84,17 +84,17 @@ export const pages = [
         {
           title: "2018 - DIPLOME 42",
           subtitle: "École 42 - niveau 21 équivalent Master",
-          description: "Faute d'argent, j'ai du quitté Épitech pour l'école 42. Avec exactement la même philosophie: Apprendre par soit même. Avec un programme copié sur Epitech, j'ai très vite trouvé mes marques et pris beaucoup de plaisir pendant 5 ans."
+          description: "Faute de moyens, j'ai du quitter Épitech pour l'école 42. Avec exactement la même philosophie: Apprendre par soi même. Avec un programme copié sur Epitech, j'ai très vite trouvé mes marques et pris beaucoup de plaisir pendant 5 ans."
         },
         {
           title: "2016 - DIGITAL ENTREPRENEURSHIP HEC PARIS",
           subtitle: "Startup MonWagon",
-          description: "Durant mon cursus a l'école 42, j'en ai profité pour participer à 2 formations de 4 mois chacunes a HEC, ou j'ai pu avoir une vision plus large que le simple dev. Nous avons monté un MVP de MonWagin qui était le Waze des transports en communs."
+          description: "Durant mon cursus à l'école 42, j'en ai profité pour participer à 2 formations de 4 mois chacunes à HEC, ou j'ai pu avoir une vision plus large que le simple dev. Nous avons monté un MVP de MonWagon qui était le Waze des transports en communs."
         },
         {
           title: "2012 - 2 ANNÉES D’ÉCOLE D’INGÉNIEUR",
           subtitle: "Epitech",
-          description: "J'ai passé 2 ans dans cette école ou il n'y a pas de profs et ou les projets qui s'enchainent nous oblige à nous débrouiller et apprendre tout seul. J'ai beaucoup aimé cette école qui donne des bases solides en code C et C++, qui permet ensuite d'appréhender les autres languages plus facilement."
+          description: "J'ai passé 2 ans dans cette école où il n'y a pas de profs et où les projets qui s'enchainent nous obligent à nous débrouiller et apprendre tout seul. J'ai beaucoup aimé cette structure qui donne des bases solides en code C et C++, qui permet ensuite d'appréhender les autres languages plus facilement."
         },
         {
           title: "2011 - BACCALAURÉAT S",
@@ -112,12 +112,12 @@ export const pages = [
         {
           title: "Compétences",
           subtitle: "Gestion de projet / Team Player / Créativité / Curieux",
-          description: "J'aime beaucoup participer l'élaboration d'un projet, ne pas être seulement développeur mais bien comprendre les fonctions que je code et être intégré dans l'écosystème ou je travaille. Je sais travailler en équipe et être force de proposition. J'apprécie tout particulièrement d'apprendre quel que soit le domaine: design / technos / bonnes pratiques"
+          description: "J'aime beaucoup participer à l'élaboration d'un projet, ne pas être seulement développeur mais bien comprendre les fonctions que je code et être intégré dans l'écosystème où je travaille. Je sais travailler en équipe et être force de propositions. J'apprécie tout particulièrement d'apprendre quel que soit le domaine: design / technos / bonnes pratiques"
         },
         {
           title: "Loisirs",
           subtitle: "Musique / Cinéma / Sport",
-          description: "J'écoute et je joue plusieurs instruments depuis tout petit. Je vais une fois par semaine au cinéma et regarde beaucoup de films / séries au quotidien. J'ai besoin de sport, je pratique donc du volley en club et ne suis jamais contre un petit foot, tennis, badminton..."
+          description: "J'écoute et je joue de plusieurs instruments depuis tout petit. Je vais une fois par semaine au cinéma et regarde beaucoup de films / séries au quotidien. J'ai besoin de sport, je pratique donc du volley en club et ne suis jamais contre un petit foot, tennis, badminton..."
         },
       ]
     },
