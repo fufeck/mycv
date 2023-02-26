@@ -134,7 +134,8 @@ export const pages = [
         },
         {
           title: "Contact",
-          subtitle: "fabien.tafforeau@gmail.com / 0783963184"
+          html: true,
+          description: "fabien.tafforeau@gmail.com<br/>0783963184"
         },
       ]
     },
