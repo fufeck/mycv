@@ -1,11 +1,7 @@
 <!-- Use preprocessors via the lang attribute! e.g. <template lang="pug"> -->
 <template>
   <div id="app">
-    <div class="header">
-      <div class="menu">
-        <button v-for="p in pages" :key="'button#' + p.id" @click="scrollMeTo(p.id)">{{ p.name }}</button>
-      </div>
-    </div>
+    <MenuDesktop :items="pages" :activeItemIndex="activeItemIndex" @select="scrollMeTo($event)"/>
 
     <div v-for="p in pages" :key="'page#' + p.id" :class="p.class" :ref="p.id">
       <div class="title">
@@ -26,25 +22,48 @@
 <script>
 
 import { pages } from './../data/pages.data.ts'
+import MenuDesktop from "./MenuDesktop.vue"
 
 export default {
+  components: {
+    MenuDesktop
+  },
   data() {
     return {
+      activeItemIndex: 0,
       pages,
+      marge: 74,
     };
   },
   methods: {
     scrollMeTo(refName) {
       const element = this.$refs[refName][0];
-      const top = element.offsetTop - 74;
-
+      const top = element.offsetTop - this.marge;
       window.scrollTo({
         top,
         left: 0,
         behavior: 'smooth'
       });
-    }
-  }
+      this.activeItemIndex = this.pages.findIndex(item => item.name === name)
+    },
+    onScroll() {
+      this.setActiveItemIndex();
+    },
+    setActiveItemIndex() {
+      let newIndex = 0;
+      for (let i = 0; i < this.pages.length; i++) {
+        const p = this.pages[i];
+        if ( this.$refs[ p.id ][0].offsetTop - this.marge <= window.top.scrollY ) {
+          newIndex = i
+        }
+      }
+      this.activeItemIndex = newIndex;
+    },
+  },
+  mounted() {
+    this.setActiveItemIndex();
+    window.addEventListener("scroll", this.onScroll)
+  },
 };
 </script>
 
@@ -73,21 +92,23 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
     background-color: $yellow;
     .menu {
-      padding: 20px;
       display: flex;
       justify-content: right;
-      align-items: baseline;
-      button {
-        color: $black;
-        background: none;
-        border: none;
-        font: inherit;
-        padding: 10px;
-        cursor: pointer;
-      }
+      width: 100%;
+      // padding: 20px;
+      // display: flex;
+      // justify-content: right;
+      // align-items: baseline;
+      // button {
+      //   color: $black;
+      //   background: none;
+      //   border: none;
+      //   font: inherit;
+      //   padding: 10px;
+      //   cursor: pointer;
+      // }
     }
   }
 

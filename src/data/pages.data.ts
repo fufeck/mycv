@@ -45,12 +45,13 @@ export const pages = [
         {
           title: "2019 - FREELANCE DÉVELOPPEUR FULLSTACK - FABNUM",
           subtitle: "NodeJs / NestJs / Angular2 / Vue2 / Postgres / Typescript",
-          description: "SEPIA - Création et développement d’une application web pourvisualiser le trafic aérien en temps réel. OSIRIS - Création et développement d’une web pour ordonner les formations rattachées à l’armée de l’air",
+          html: true,
+          description: "SEPIA - Création et développement d’une application web pourvisualiser le trafic aérien en temps réel comme FlightRadar24.<br/>OSIRIS - Création et développement d’une web app pour ordonner les écoles, formations et cursus rattachées à l’armée de l’air",
         },
         {
           title: "2017 - STAGE / CDI DÉVELOPPEUR FULLSTACK - COSIUM",
           subtitle: "Drupal / Java / AngularJs / Intellij",
-          description: "Création et maintien de sites de e-commerces. Développement de fonctionnalité sur la solution SASS",
+          description: "Création et maintien de sites de e-commerces d'optique. Développement de fonctionnalité sur la solution SASS Cosium",
         },
         {
           title: "2016 - PART-TIME DÉVELOPPEUR FULLSTACK - MONBUILDING",
@@ -60,12 +61,12 @@ export const pages = [
         {
           title: "2015 - FREELANCE DÉVELOPPEUR WEB / MOBILE - IAPULSE",
           subtitle: "NodeJs / Loopback / Ionic / Cordova / AngularJs / MongoDB",
-          description:  "Développement d’une application mobile avec son Backend"
+          description:  "Développement de l'application mobile Looky en Ionic avec son Backend en Loopback"
         },
         {
           title: "2015 - PART-TIME DÉVELOPPEUR WEB / MOBILE- AMEXIUM",
           subtitle: "Symphony2 / Ionic / Cordova / AngularJs / MySQL",
-          description: "Développement d’une solution web SASS avec application mobile",
+          description: "Développement d’une solution web SASS avec application mobile, qui permettait de référencé tout les biens et mobiliers d'une structure",
         },
         {
           title: "2014 - STAGE DÉVELOPPEUR WEB - SUBVITAMINE",
@@ -83,14 +84,17 @@ export const pages = [
         {
           title: "2018 - DIPLOME 42",
           subtitle: "École 42 - niveau 21 équivalent Master",
+          description: "Faute d'argent, j'ai du quitté Épitech pour l'école 42. Avec exactement la même philosophie: Apprendre par soit même. Avec un programme copié sur Epitech, j'ai très vite trouvé mes marques et pris beaucoup de plaisir pendant 5 ans."
         },
         {
           title: "2016 - DIGITAL ENTREPRENEURSHIP HEC PARIS",
           subtitle: "Startup MonWagon",
+          description: "Durant mon cursus a l'école 42, j'en ai profité pour participer à 2 formations de 4 mois chacunes a HEC, ou j'ai pu avoir une vision plus large que le simple dev. Nous avons monté un MVP de MonWagin qui était le Waze des transports en communs."
         },
         {
           title: "2012 - 2 ANNÉES D’ÉCOLE D’INGÉNIEUR",
           subtitle: "Epitech",
+          description: "J'ai passé 2 ans dans cette école ou il n'y a pas de profs et ou les projets qui s'enchainent nous oblige à nous débrouiller et apprendre tout seul. J'ai beaucoup aimé cette école qui donne des bases solides en code C et C++, qui permet ensuite d'appréhender les autres languages plus facilement."
         },
         {
           title: "2011 - BACCALAURÉAT S",
