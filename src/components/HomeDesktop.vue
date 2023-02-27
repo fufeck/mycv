@@ -32,7 +32,7 @@ export default {
     return {
       activeItemIndex: 0,
       pages,
-      marge: 74,
+      marge: 70,
     };
   },
   methods: {
@@ -53,7 +53,7 @@ export default {
       let newIndex = 0;
       for (let i = 0; i < this.pages.length; i++) {
         const p = this.pages[i];
-        if ( this.$refs[ p.id ][0].offsetTop - this.marge <= window.top.scrollY ) {
+        if ( this.$refs[ p.id ][0]?.offsetTop - this.marge <= window.top.scrollY ) {
           newIndex = i
         }
       }
@@ -85,36 +85,11 @@ export default {
   .bg-black {
     background-color: $black;
   }
-  
-  .header {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $yellow;
-    .menu {
-      display: flex;
-      justify-content: right;
-      width: 100%;
-      // padding: 20px;
-      // display: flex;
-      // justify-content: right;
-      // align-items: baseline;
-      // button {
-      //   color: $black;
-      //   background: none;
-      //   border: none;
-      //   font: inherit;
-      //   padding: 10px;
-      //   cursor: pointer;
-      // }
-    }
-  }
 
   .page {
     position: relative;
     min-height: 100vh;
+    padding: 50px 0;
     &.center {
       display: flex;
       flex-flow: column;

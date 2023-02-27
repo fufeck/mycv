@@ -43,13 +43,13 @@ export const pages = [
       title: "EXPERIENCES",
       tab: [
         {
-          title: "2019 - FREELANCE DÉVELOPPEUR FULLSTACK - FABNUM",
-          subtitle: "NodeJs / NestJs / Angular2 / Vue2 / Postgres / Typescript",
+          title: "2019 / 2023 - FREELANCE DÉVELOPPEUR FULLSTACK - FABNUM",
+          subtitle: "NodeJs / NestJs / Typeorm / Swagger / Typescript / Redis / Postgis / TymescaleDB / Postgres / Vue2 / Vuetify / Jest / Angular / Leaflet / Turfjs / OpenStreatMap",
           html: true,
-          description: "SEPIA - Création et développement d’une application web pour visualiser le trafic aérien en temps réel comme FlightRadar24.<br/>OSIRIS - Création et développement d’une web app pour ordonner les écoles, formations et cursus rattachés à l’armée de l’air",
+          description: "OSIRIS - Conception et développement d’une application pour ordonner et visualiser les formations et cursus des écoles de l’armée de l’air. Mise en place d’une API CRUD robuste avec système de migration et droits RBAC avec son front et des tests unitaires.<br/>SEPIA - Création et développement d’une application web pour visualiser le trafic aérien en temps réel (comme FlightRadar24). Création d’un service pour récupérer les différents flux (BEAST, SBS…) et fusionner toutes les données dans une DB tampon. Optimisation de la DB persistante pour supporter la charge. Utilisation de librairies de cartographies et geodatas en front.",
         },
         {
-          title: "2017 - STAGE / CDI DÉVELOPPEUR FULLSTACK - COSIUM",
+          title: "2017 / 2019 - STAGE / CDI DÉVELOPPEUR FULLSTACK - COSIUM",
           subtitle: "Drupal / Java / AngularJs / Intellij",
           description: "Création et maintien de sites de e-commerces d'optique. Développement de fonctionnalité sur la solution SASS Cosium",
         },
